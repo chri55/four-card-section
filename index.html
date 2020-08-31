@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Four card feature section</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./build/styles.css">
+</head>
+<body>
+  <div class="main">
+    <div class="header">
+      <h1 class="tagline">
+        Reliable, efficient delivery
+      </h1>
+      <h2 class="tagline">
+        Powered by Technology
+      </h1>
+      <div class="sub-tagline">
+        Our Artificial Intelligence powered tools use millions
+        of project data points to ensure that your project is successful
+      </div>
+    </div>
+    <div class="four-card-section">
+      <div class="card-col">
+        <div  onload="() => removeClassOnLoadedElement('slide-right');"
+              class="card left cyan slide-right"
+        >
+          <h2 class="item-title">
+            Supervisor
+          </h2>
+          <p class="desc">
+            Monitors activity to identify project roadblocks
+          </p>
+          <img
+            class="card-logo" 
+            src="./images/icon-supervisor.svg" 
+            alt="Supervisor Logo"
+          >
+        </div>
+      </div>
+      <div class="card-col">
+        <div  onload="() => removeClassOnLoadedElement('slide-down');"
+              class="card mid red slide-down"
+        >
+          <h2 class="item-title">
+            Team Builder
+  
+          </h2>
+          <p class="desc">
+            Scans our talent network to create the optimal team for your project
+  
+          </p>
+          <img
+            class="card-logo" 
+            src="./images/icon-team-builder.svg" 
+            alt="Team Builder Logo"
+          >
+        </div>
+        <div onload="() => removeClassOnLoadedElement('slide-up');"
+             class="card mid yellow slide-up"
+        >
+          <h2 class="item-title">
+            Karma
+  
+          </h2>
+          <p class="desc">
+            Regularly evaluates our talent to ensure quality
+  
+          </p>
+          <img
+            class="card-logo" 
+            src="./images/icon-karma.svg" 
+            alt="Karma Logo"
+          >
+        </div>
+      </div>
+      <div class="card-col">
+        <div onload="() => removeClassOnLoadedElement('slide-left');"
+             class="card right blue slide-left"
+        >
+          <h2 class="item-title">
+            Calculator
+  
+          </h2>
+          <p class="desc">
+            Uses data from past projects to provide better delivery estimates
+  
+          </p>
+          <img
+            class="card-logo" 
+            src="./images/icon-calculator.svg" 
+            alt="Supervisor Logo"
+          >
+        </div>
+      </div>
+    </div>
+  </div>  
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://christill.net">Chris Till</a>.
+    </p>
+  </footer>
+  <script src="./build/script.js"></script>
+</body>
+</html>
